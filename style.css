@@ -1,0 +1,192 @@
+/* importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Padronização do CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar #logo {
+    flex: 20%;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10%;
+}
+.navbar #logo h1{
+    color: #180F4A;
+    font-size: 34px;
+    text-align: left;
+}
+.navbar #menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+.navbar #menu a{
+    color: #180F4A;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+.navbar #menu a:hover{
+    color: #ff2978;
+    border-top: 4px solid #180F4A;
+}
+.navbar #menu a#fale-conosco{
+    color: white;
+    background: #180F4A;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 10%; /*por ser o último elemento do container, todos os elementos anteriores vão para o lado*/
+    margin-left: 5%;
+}
+.navbar #menu a#fale-conosco:hover{
+    border-top: none;
+    background: #ff2978;
+    color: #180F4A;
+}
+
+/* HEADER */
+header{
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 100px;
+}
+header .headline{
+    flex: 40%;
+    margin-left: 10%;
+    align-content: center;
+}
+header .headline h2,h1{
+    color: #180F4A;
+    padding: 0;
+    margin: 0;
+}
+header .headline h2{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+header .headline h1{
+    font-size: 70px;
+}
+header .headline p{
+    font-size: 15px;
+    opacity: 0.7;
+}
+header .headline #contrate-agora{
+    margin-top: 5%;
+}
+header .headline #contrate-agora a{
+    color: white;
+    text-decoration: none;
+    background-color: #ff2978;
+    padding:20px;
+    font-size: 80%;
+    font-weight: bold;
+    border-radius: 5px;
+}
+header .headline #contrate-agora a:hover{
+    
+    background: #180F4A;
+}
+header .img-headline img{
+    max-width: 95%;
+}
+header .img-headline{
+    flex: 40%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+/* MAIN */
+main{
+    margin: 0% 5%;
+    display: inline-block;
+    padding: 5%;
+    margin-top: 80px;
+}
+main h2{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+main .features{
+    display: flex;
+    justify-content: space-around;
+    gap: 1%;
+}
+main .features .card{
+    padding: 5%;
+    border: 1px solid #ff2978;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+main .features .card img{
+    width: 20%;
+}
+main .features .card p{
+    text-align: center;
+}
+main .features .card-alternative{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 5%;
+    display: none;
+    background-color: #ff2978;
+}
+main .features .card:hover .card-alternative{
+    display:block;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background: linear-gradient(180deg, #180F4A,#090422,black);
+    padding: 5%;
+    color: white;
+    border-top: 5px solid #ff2978;
+    position: relative;
+}
+footer h4{
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+/* FIXED/WHATSAPP */
+#whatsapp{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: white;
+    border-radius: 50px;
+}
+

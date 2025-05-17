@@ -1,0 +1,26 @@
+/* media queries */
+@media  screen and (max-width:1005px) {
+    .navbar{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .navbar #menu{
+        display: none;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header .headline #contrate-agora a{
+        padding: 10px;
+    }
+    header .img-headline img{
+        width: 70%;
+        margin-top: 5rem;
+        width: 70rem;
+    }
+    main .features{
+        flex-direction: column;
+    }
+}
